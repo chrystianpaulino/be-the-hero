@@ -1,0 +1,61 @@
+.register-container {
+        /* Largura de 100% mas com máxima de 120  */
+        width: 100%;
+        max-width: 1120px;
+        /* Altura para ocupar toda altura  */
+        height: 100vh;
+        /* Conteúdo sempre centralizado  */
+        margin: 0 auto;
+    
+    
+        /* facil para alinhar, por padrao todos os divs ficam ao lado do outro */
+        display: flex;
+        /* verticalmente ao centro */
+        align-items: center;
+        /* horizontalmente ao centro */
+        justify-content: center;
+}
+
+.register-container .content {
+    width: 100%;
+    padding: 96px;
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    display: flex;
+    /* joga a section totalmente pra esquerda e o form totalmente pra direta e da espaço entre eles */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-container .content section {
+    width: 100%;
+    max-width: 380px;
+}
+
+.register-container .content section h1 {
+    margin: 64px 0 32px;
+    font-size: 32px;
+}
+
+.register-container .content section p {
+    font-size: 18px;
+    color: #737380;
+    line-height: 32px;
+}
+
+.register-container .content form {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 8px;
+}
+
+.register-container .content form .input-group {
+    display: flex;
+}
+
+/* input que tenha 1 input antes */
+.register-container .content form .input-group input + input{
+    margin-left: 8px;
+}
